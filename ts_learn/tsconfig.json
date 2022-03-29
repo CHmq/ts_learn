@@ -1,0 +1,28 @@
+{
+    //ts编译器配置文件
+    // "include"指定编译的文件(**任意目录，*任意文件)
+    // "exclude"指定排除编译的文件(**任意目录，*任意文件)
+
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [],
+    //"compilerOptions"编译器选项
+    "compilerOptions": {
+        "target": "ES3",//默认es3版本
+        "module": "ES6", //指定引用模块规则
+        "lib":[], //指定引用库（默认使用dom等常用库）
+        "outDir": "./dist",//指定编译后js文件的目录
+        "outFile": "./dist",//合并文件中全局作用域
+        "allowJs": false, //默认忽略js文件
+        "checkJs": false, //检查js语法
+        "removeComments": false, //移除注释
+        "noEmit": false, //默认不生成文件
+        "noEmitOnError": false, //错误不生成js文件
+
+        //不允许隐式any类型
+        "noImplicitAny": false,
+        //严格检查null值
+        "strictNullChecks": false
+    }
+}
